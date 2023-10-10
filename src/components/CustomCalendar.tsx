@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {findList, findLogin} from "./apis/loginApi";
 
 const CustomCalendar = () => {
+  useEffect(()=>{
+    findList()
+    findLogin()
+  },[])
+
   return (
     <div>
-      wer
+
     </div>
   );
 };
